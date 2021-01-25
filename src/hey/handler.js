@@ -2,6 +2,7 @@
 const common = require('../common/common.js');
 
 module.exports.hello = async event => {
+  console.log(`Event request:  `, event)
   const currentEnvironment = process.APP_ENVIRONMENT || '<none>';
   return {
     statusCode: 200,

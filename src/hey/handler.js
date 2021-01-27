@@ -8,7 +8,7 @@ module.exports.hello = async event => {
     statusCode: 200,
     body: JSON.stringify(
       {
-        message: `This is Corey\'s really nice Lambda, running in the ${currentEnvironment} environment! ${common.MoreText}`,
+        message: `This is Corey\'s really nice Lambda2, running in the ${currentEnvironment} environment! ${common.MoreText}`,
         input: event,
       },
       null,

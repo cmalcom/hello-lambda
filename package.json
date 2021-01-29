@@ -1,18 +1,24 @@
 {
-  "name": "my-lambda",
-  "version": "1.0.0",
-  "description": "stuff",
-  "scripts": {
-    "build": "npx webpack --progress"
+  "name": "cdk-test-proj",
+  "version": "0.1.0",
+  "bin": {
+    "cdk-test-proj": "bin/cdk-test-proj.js"
   },
-  "repository": {},
-  "author": "Corey",
-  "license": "UNLICENSED",
+  "scripts": {
+    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "cdk": "cdk",
+    "test": "jest",
+    "lint": "npx eslint -f codeframe --ignore-pattern src/designSystem src"
+  },
   "devDependencies": {
-    "webpack-cli": "^4.4.0"
+    "@aws-cdk/assert": "1.79.0",
+    "aws-cdk": "1.79.0",
+    "eslint": "^6.8.0",
+    "jest": "^26.4.2"
   },
   "dependencies": {
-    "terser-webpack-plugin": "^5.1.1",
-    "webpack": "^5.17.0"
+    "@aws-cdk/aws-lambda": "^1.86.0",
+    "@aws-cdk/aws-logs": "^1.86.0",
+    "@aws-cdk/core": "1.82.0"
   }
 }

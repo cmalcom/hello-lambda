@@ -1,0 +1,153 @@
+{
+  "version": "7.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "nwea-stack-Dev-pipeline-lambda": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://006684778752/us-west-2",
+      "properties": {
+        "templateFile": "nwea-stack-Dev-pipeline-lambda.template.json",
+        "tags": {
+          "stack-team-support-email": "devTeam@nwea.org"
+        }
+      },
+      "metadata": {
+        "/nwea-stack-Dev-pipeline-lambda": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "stack-team-support-email",
+                "Value": "devTeam@nwea.org"
+              }
+            ],
+            "trace": [
+              "ConstructNode.addMetadata (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/node_modules/@aws-cdk/core/lib/construct-compat.js:395:62)",
+              "Object.addStackArtifactToAssembly (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/node_modules/@aws-cdk/core/lib/stack-synthesizers/_shared.js:22:20)",
+              "LegacyStackSynthesizer.emitStackArtifact (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/node_modules/@aws-cdk/core/lib/stack-synthesizers/stack-synthesizer.js:34:19)",
+              "LegacyStackSynthesizer.synthesize (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:122:14)",
+              "construct (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/node_modules/@aws-cdk/core/lib/private/synthesis.js:142:35)",
+              "visit (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/node_modules/@aws-cdk/core/lib/private/synthesis.js:181:9)",
+              "visit (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/node_modules/@aws-cdk/core/lib/private/synthesis.js:178:9)",
+              "synthesizeTree (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/node_modules/@aws-cdk/core/lib/private/synthesis.js:136:5)",
+              "Object.synthesize (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/node_modules/@aws-cdk/core/lib/private/synthesis.js:32:5)",
+              "App.synth (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/node_modules/@aws-cdk/core/lib/stage.js:98:41)",
+              "Object.<anonymous> (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/bin/lambda-cdk.js:23:5)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)"
+            ]
+          }
+        ],
+        "/nwea-stack-Dev-pipeline-lambda/nwea-Dev-function/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "nweaDevfunctionServiceRole1693DF2B",
+            "trace": [
+              "new Role (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/node_modules/@aws-cdk/aws-iam/lib/role.js:70:22)",
+              "new Function (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/node_modules/@aws-cdk/aws-lambda/lib/function.js:77:35)",
+              "new CdkProjPipelineLambdaStack (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/lambda-stack.js:14:25)",
+              "Object.<anonymous> (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/bin/lambda-cdk.js:16:24)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)"
+            ]
+          }
+        ],
+        "/nwea-stack-Dev-pipeline-lambda/nwea-Dev-function/LambdaSourceBucketNameParameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "nweaDevfunctionLambdaSourceBucketNameParameter15DD2FAF",
+            "trace": [
+              "CfnParametersCode.bind (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/node_modules/@aws-cdk/aws-lambda/lib/code.js:293:37)",
+              "new Function (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/node_modules/@aws-cdk/aws-lambda/lib/function.js:95:33)",
+              "new CdkProjPipelineLambdaStack (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/lambda-stack.js:14:25)",
+              "Object.<anonymous> (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/bin/lambda-cdk.js:16:24)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)"
+            ]
+          }
+        ],
+        "/nwea-stack-Dev-pipeline-lambda/nwea-Dev-function/LambdaSourceObjectKeyParameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "nweaDevfunctionLambdaSourceObjectKeyParameter6C615BCC",
+            "trace": [
+              "CfnParametersCode.bind (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/node_modules/@aws-cdk/aws-lambda/lib/code.js:298:36)",
+              "new Function (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/node_modules/@aws-cdk/aws-lambda/lib/function.js:95:33)",
+              "new CdkProjPipelineLambdaStack (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/lambda-stack.js:14:25)",
+              "Object.<anonymous> (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/bin/lambda-cdk.js:16:24)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)"
+            ]
+          }
+        ],
+        "/nwea-stack-Dev-pipeline-lambda/nwea-Dev-function/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "nweaDevfunction92097C56",
+            "trace": [
+              "new Function (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/node_modules/@aws-cdk/aws-lambda/lib/function.js:133:26)",
+              "new CdkProjPipelineLambdaStack (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/lambda-stack.js:14:25)",
+              "Object.<anonymous> (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/bin/lambda-cdk.js:16:24)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)"
+            ]
+          }
+        ],
+        "/nwea-stack-Dev-pipeline-lambda/nwea-Dev-logs/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "nweaDevlogs65A07085",
+            "trace": [
+              "new LogGroup (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/node_modules/@aws-cdk/aws-logs/lib/log-group.js:154:26)",
+              "new CdkProjPipelineLambdaStack (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/lambda-stack.js:30:23)",
+              "Object.<anonymous> (/Users/corey.malcom/dev/devAcc/cdk-training/cdk-test-proj/hello-lambda/bin/lambda-cdk.js:16:24)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "startup (internal/bootstrap/node.js:283:19)",
+              "bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

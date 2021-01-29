@@ -1,0 +1,25 @@
+{
+  "app": "node bin/lambda-cdk.js",
+  "context": {
+    "@aws-cdk/core:enableStackNameDuplicates": "true",
+    "aws-cdk:enableDiffNoFail": "true",
+    "@aws-cdk/core:stackRelativeExports": "true",
+    "@aws-cdk/aws-ecr-assets:dockerIgnoreSupport": true,
+    "@aws-cdk/aws-secretsmanager:parseOwnedSecretName": true,
+    "@aws-cdk/aws-kms:defaultKeyPolicies": true,
+    "nweaEnvs":{
+      "dev": {
+        "region": "us-west-2",
+        "account": "006684778752",
+        "supportEmail": "devTeam@nwea.org"
+      },
+      "prd": {
+          "region": "us-east-1",
+          "account": "006684778752",
+          "supportEmail": "prdTeam@nwea.org"
+      }
+
+    } 
+  },
+  "versionReporting": false
+}

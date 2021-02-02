@@ -1,7 +1,7 @@
 'use strict';
 const common = require('../common/common.js');
 
-module.exports.hello = async event => {
+module.exports.handler = async event => {
   console.log(`Event request:  `, event)
   const currentEnvironment = process.APP_ENVIRONMENT || '<none>';
   return {

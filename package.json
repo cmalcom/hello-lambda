@@ -9,7 +9,7 @@
   "author": "Corey",
   "license": "UNLICENSED",
   "devDependencies": {
-    "webpack-cli": "^4.4.0"
+    "webpack-cli": "^4.5.0"
   },
   "dependencies": {
     "terser-webpack-plugin": "^5.1.1",
